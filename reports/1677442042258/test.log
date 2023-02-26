@@ -1,0 +1,25 @@
+[2023-02-26 08:07:22] [1] [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+auto_screenshot=true
+project_report_directory=./reports
+max_screen_history=10
+localization_encoding=UTF-8
+language=en_US
+selenium_url=
+
+------------- Driver capabilities -----------
+capabilities.providerOptions=options
+================================================
+
+[2023-02-26 08:07:22] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-02-26 08:07:23] [1] [INFO] Reflections took 942 ms to scan 23 urls, producing 3473 keys and 17815 values 
+[2023-02-26 08:07:23] [1] [INFO] Use thread-count='5' from suite file.
+[2023-02-26 08:07:23] [1] [INFO] Set data-provider-thread-count=1
+[2023-02-26 08:07:23] [1] [INFO] CARINA_CORE_VERSION: 8.0.4
+[2023-02-26 08:07:28] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2023-02-26 08:07:28] [1] [INFO] RESULT #1: TEST [User API tests - testDeleteUsers] PASS [log=file://C:\Users\alex1\coding\carina_demo\carina.test\.\reports\1677442042258/aa78a65c-ded3-4711-a5a3-3092d35effa4/test.log]
+[2023-02-26 08:07:28] [1] [INFO] RESULT #2: TEST [User API tests - testCreateUserMissingSomeFields] PASS [log=file://C:\Users\alex1\coding\carina_demo\carina.test\.\reports\1677442042258/c89d5cc1-6983-4322-b46d-311766f83d88/test.log]
+[2023-02-26 08:07:28] [1] [INFO] RESULT #3: TEST [User API tests - testGetUsers] PASS [log=file://C:\Users\alex1\coding\carina_demo\carina.test\.\reports\1677442042258/7ef44dd6-6e23-437d-8865-a65a7468ec67/test.log]
+[2023-02-26 08:07:28] [1] [INFO] RESULT #4: TEST [User API tests - testCreateUser] PASS [log=file://C:\Users\alex1\coding\carina_demo\carina.test\.\reports\1677442042258/481a9e69-ed2d-4fb6-a5ff-328b567ff1b5/test.log]

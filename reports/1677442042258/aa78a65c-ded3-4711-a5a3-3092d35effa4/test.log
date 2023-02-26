@@ -1,0 +1,92 @@
+[2023-02-26 08:07:23] [57] [WARN] Reporting disabled: using no op test run registrar
+[2023-02-26 08:07:23] [57] [INFO] TEST [User API tests - testDeleteUsers] STARTED at [12:07:23 2023-02-26]
+[2023-02-26 08:07:24] [57] [INFO] Base properties loaded: api/users/user.properties
+[2023-02-26 08:07:24] [57] [INFO] Request method:	DELETE
+Request URI:	https://jsonplaceholder.typicode.com/users/1
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+[
+    {
+        "id": 1,
+        "name": "Leanne Graham",
+        "username": "kqovqsqx",
+        "email": "Sincere@april.biz",
+        "address": {
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+            "name": "qyrjgiil",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Leanne Graham",
+        "username": "kqovqsqx",
+        "email": "Sincere@april.biz",
+        "address": {
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+            "name": "qyrjgiil",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+        }
+    }
+]
+HTTP/1.1 200 OK
+Date: Sun, 26 Feb 2023 20:07:24 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1677442092
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server-Timing: cf-q-config;dur=2.0000006770715e-06
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=XQXCsQKoRRmSM4MV9rHmv%2FlzHqqi6PEYrDfVprLcOQ6YZSm%2F%2FBR14k4r4BxHlvzYVvbYhfzjqf9UHurYmAzzxgjGaBHvmuihazJolhG50Id31L1rDETz2dDvLrUepQzg01r7Mt5RNphL5oOdUmIw"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 79fb4e8bad95987f-SJC
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    
+}
+
+[2023-02-26 08:07:24] [57] [INFO] TEST [User API tests - testDeleteUsers] PASSED at [12:07:24 2023-02-26]
