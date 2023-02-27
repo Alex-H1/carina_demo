@@ -33,13 +33,9 @@ public class APISampleTest implements IAbstractTest {
     @Test()
     @MethodOwner(owner = "qpsdemo")
     public void testCreateUser() throws Exception {
-        LOGGER.info("test");
-        setCases("4555,54545");
         PostUserMethod api = new PostUserMethod();
         api.setProperties("api/users/user.properties");
-
         AtomicInteger counter = new AtomicInteger(0);
-
         api.callAPIWithRetry()
                 .withLogStrategy(APIMethodPoller.LogStrategy.ALL)
                 .peek(rs -> counter.getAndIncrement())
@@ -47,7 +43,7 @@ public class APISampleTest implements IAbstractTest {
                 .pollEvery(1, ChronoUnit.SECONDS)
                 .stopAfter(10, ChronoUnit.SECONDS)
                 .execute();
-        api.validateResponse();
+         api.validateResponse();
     }
 
     @Test()

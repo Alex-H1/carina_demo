@@ -9,7 +9,7 @@ import com.qaprosoft.carina.core.foundation.api.http.HttpMethodType;
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.Configuration;
 
-@Endpoint(url = "${base_url}/todo/1", methodType = HttpMethodType.DELETE)
+@Endpoint(url = "${base_url}/todos/1", methodType = HttpMethodType.DELETE)
 @RequestTemplatePath(path = "api/todos/_delete/rq.json")
 @ResponseTemplatePath(path = "api/todos/_delete/rs.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)

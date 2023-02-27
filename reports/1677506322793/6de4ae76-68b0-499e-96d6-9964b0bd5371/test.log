@@ -1,0 +1,227 @@
+[2023-02-27 01:58:44] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-02-27 01:58:44] [1] [INFO] TEST [carina.test - testCreateTodo] STARTED at [05:58:44 2023-02-27]
+[2023-02-27 01:58:46] [1] [INFO] Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/todos
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": true
+    }
+]
+HTTP/1.1 201 Created
+Date: Mon, 27 Feb 2023 13:58:45 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 116
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1677506352
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/todos/201
+X-Content-Type-Options: nosniff
+Etag: W/"74-ISr4/GOp/ceeDF0CONs3NOMj4is"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server-Timing: cf-q-config;dur=7.0000096457079e-06
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zapsOaHCdJrATouZp4fDM18bgVhEbVjJM8Rzh9VgNOz0W2PSQ7Bd8YluTH7W8eGAObXLryYLBtYBgc4Wgnd6p3jPldXQGIOGeYtpDau3yYocJgbAIQ0Jn8d2uh%2BWxhAXF5tnPRXbQa9PH4yk%2Fpgw"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7a016fe64faece74-SJC
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "0": {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": true
+    },
+    "id": 201
+}
+
+[2023-02-27 01:58:48] [1] [INFO] Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/todos
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": true
+    }
+]
+HTTP/1.1 201 Created
+Date: Mon, 27 Feb 2023 13:58:46 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 116
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 998
+X-Ratelimit-Reset: 1677506352
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/todos/201
+X-Content-Type-Options: nosniff
+Etag: W/"74-ISr4/GOp/ceeDF0CONs3NOMj4is"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server-Timing: cf-q-config;dur=8.000002708286e-06
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9OsQhj41%2FramFVZlc5VDzexVQJg3u3soovGyGV70he4mVVHpRsrbF%2B0IVbsfcRfysa%2Fg5l5%2BDxlPMf45bd5%2FZYI7guA4QR5ZAhIq2ftSWTirLFfh4YJbg5GH9YH5uRdGl%2Bp6T1J9P5qgLhLwnoCv"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7a016fee9a1df97b-SJC
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "0": {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": true
+    },
+    "id": 201
+}
+
+[2023-02-27 01:58:49] [1] [INFO] Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/todos
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": true
+    }
+]
+HTTP/1.1 201 Created
+Date: Mon, 27 Feb 2023 13:58:48 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 116
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 997
+X-Ratelimit-Reset: 1677506352
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/todos/201
+X-Content-Type-Options: nosniff
+Etag: W/"74-ISr4/GOp/ceeDF0CONs3NOMj4is"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server-Timing: cf-q-config;dur=6.0000020312145e-06
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=teLODZVO5tL48txjKT4sjh9zQratUsnyHfhURsZgIP2XX7mA17lnPWI0cFtGSAMB0nVPA%2BfzzcvzJykx3HmZ58AeuH8bkjKPxNooyOzKgQAkDYwYH%2B0GY9TAvUPtUgxvAGM4QtLI%2FJghIn6MTFWK"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7a016ff66b1c9669-SJC
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "0": {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": true
+    },
+    "id": 201
+}
+
+[2023-02-27 01:58:50] [1] [INFO] Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/todos
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": true
+    }
+]
+HTTP/1.1 201 Created
+Date: Mon, 27 Feb 2023 13:58:49 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 116
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 996
+X-Ratelimit-Reset: 1677506352
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/todos/201
+X-Content-Type-Options: nosniff
+Etag: W/"74-ISr4/GOp/ceeDF0CONs3NOMj4is"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server-Timing: cf-q-config;dur=6.9999950937927e-06
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rnv4hGmPrySrY9k%2Bt9etZmkqU%2B%2BdGzHu86Dh%2FDKd%2BA1N2yn62NSc0YpiXWEB%2FQIUiYPLeM59qaYahgA6UCpp%2BLE55JbYuYdhdhSGHB%2FSFo0FgCBaJh7oGvNHWeBb6eaE1lW4hHGEPtWXGrGLnpUO"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7a016ffe4b2df96b-SJC
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "0": {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": true
+    },
+    "id": 201
+}
+
+[2023-02-27 01:58:50] [1] [INFO] TEST [carina.test - testCreateTodo] PASSED at [05:58:50 2023-02-27]
