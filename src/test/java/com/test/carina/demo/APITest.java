@@ -23,7 +23,6 @@ public class APITest implements IAbstractTest {
 
     @Test
     public void testCreateTodo() {
-        setCases("4555,54545");
         PostTodoMethod api = new PostTodoMethod();
 //        api.setProperties("api/todos/todo.properties");
         AtomicInteger counter = new AtomicInteger(0);
@@ -41,7 +40,7 @@ public class APITest implements IAbstractTest {
     public void testGetTodo(){
         GetTodoMethod api = new GetTodoMethod();
         api.callAPIExpectSuccess();
-        api.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+        api.validateResponse();
         api.validateResponseAgainstSchema("api/todos/_get/rs.schema");
     }
 

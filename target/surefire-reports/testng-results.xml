@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-26T12:07:23 PST" name="Carina Demo Tests - API Sample" finished-at="2023-02-26T12:07:28 PST" duration-ms="5260">
+  <suite started-at="2023-03-05T18:47:34 PST" name="Carina Demo Tests - Hello World" finished-at="2023-03-05T18:47:34 PST" duration-ms="288">
     <groups>
     </groups>
-    <test started-at="2023-02-26T12:07:23 PST" name="User API tests" finished-at="2023-02-26T12:07:28 PST" duration-ms="5260">
-      <class name="com.test.carina.demo.APISampleTest">
-        <test-method signature="testDeleteUsers()[pri:0, instance:com.test.carina.demo.APISampleTest@f0c6326]" started-at="2023-02-26T12:07:23 PST" name="testDeleteUsers" finished-at="2023-02-26T12:07:24 PST" duration-ms="1450" status="PASS">
+    <test started-at="2023-03-05T18:47:34 PST" name="Hello World test" finished-at="2023-03-05T18:47:34 PST" duration-ms="288">
+      <class name="com.test.carina.demo.HelloWorld">
+        <test-method signature="helloWorld()[pri:0, instance:com.test.carina.demo.HelloWorld@620bab73]" started-at="2023-03-05T18:47:34 PST" name="helloWorld" finished-at="2023-03-05T18:47:34 PST" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDeleteUsers -->
-        <test-method signature="testCreateUserMissingSomeFields()[pri:0, instance:com.test.carina.demo.APISampleTest@f0c6326]" started-at="2023-02-26T12:07:23 PST" name="testCreateUserMissingSomeFields" finished-at="2023-02-26T12:07:24 PST" duration-ms="1455" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateUserMissingSomeFields -->
-        <test-method signature="testGetUsers()[pri:0, instance:com.test.carina.demo.APISampleTest@f0c6326]" started-at="2023-02-26T12:07:23 PST" name="testGetUsers" finished-at="2023-02-26T12:07:25 PST" duration-ms="1600" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetUsers -->
-        <test-method signature="testCreateUser()[pri:0, instance:com.test.carina.demo.APISampleTest@f0c6326]" started-at="2023-02-26T12:07:23 PST" name="testCreateUser" finished-at="2023-02-26T12:07:28 PST" duration-ms="5205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateUser -->
-      </class> <!-- com.test.carina.demo.APISampleTest -->
-    </test> <!-- User API tests -->
-  </suite> <!-- Carina Demo Tests - API Sample -->
+        </test-method> <!-- helloWorld -->
+      </class> <!-- com.test.carina.demo.HelloWorld -->
+    </test> <!-- Hello World test -->
+  </suite> <!-- Carina Demo Tests - Hello World -->
 </testng-results>

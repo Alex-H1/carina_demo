@@ -1,0 +1,27 @@
+[2023-03-06 03:27:51] [1] [INFO] 
+============= Test configuration =============
+url=https://demoblaze.com
+env=DEMO
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+project_report_directory=./reports
+max_screen_history=10
+localization_encoding=UTF-8
+language=en_US
+selenium_url=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.providerOptions=options
+capabilities.browserName=chrome
+================================================
+
+[2023-03-06 03:27:51] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-06 03:27:54] [1] [INFO] Reflections took 2600 ms to scan 23 urls, producing 3473 keys and 17839 values 
+[2023-03-06 03:27:54] [1] [INFO] [TestNG] Running:
+  C:\Users\alex1\AppData\Local\JetBrains\IntelliJIdea2022.3\temp-testng-customsuite.xml
+
+[2023-03-06 03:27:54] [1] [INFO] Set thread-count=1
+[2023-03-06 03:27:54] [1] [INFO] Set data-provider-thread-count=1
+[2023-03-06 03:27:54] [1] [INFO] CARINA_CORE_VERSION: 8.0.4
+[2023-03-06 03:28:05] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2023-03-06 03:28:05] [1] [INFO] RESULT #1: TEST [carina.test - testAddToCart] PASS [screenshots=file://C:\Users\alex1\coding\solvd\carina_demo\carina.test\.\reports\1678073271502/8dc44314-633e-456d-b9b4-016387f52f5a/report.html | log=file://C:\Users\alex1\coding\solvd\carina_demo\carina.test\.\reports\1678073271502/8dc44314-633e-456d-b9b4-016387f52f5a/test.log]

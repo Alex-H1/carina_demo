@@ -1,0 +1,5 @@
+[2023-03-06 03:17:20] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-06 03:17:20] [1] [INFO] TEST [carina.test - testAddToCart] STARTED at [19:17:20 2023-03-05]
+[2023-03-06 03:17:20] [1] [INFO] Starting driver session...
+[2023-03-06 03:17:24] [1] [INFO] Driver session started.
+[2023-03-06 03:17:24] [1] [INFO] INFO: opening url 'https://demoblaze.com'

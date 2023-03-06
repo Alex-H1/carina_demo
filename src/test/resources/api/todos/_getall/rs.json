@@ -3,7 +3,7 @@
     "userId": "regex:[\\d]",
     "id": "regex:[\\d]",
     "title": "delectus aut autem",
-    "completed": true
+    "completed": false
   },
   {
     "userId": 1,

@@ -1,8 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "array",
-  "items": {
-  "type": "objects",
+  "type": "object",
   "properties": {
     "userId": {
       "type": "integer"
@@ -23,5 +21,4 @@
     "title",
     "completed"
   ]
-  }
 }

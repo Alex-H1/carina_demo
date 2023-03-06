@@ -11,8 +11,10 @@ com\test\carina\demo\regression\dataprovider\DataproviderRetryTest2.class
 com\test\carina\demo\APISampleTest.class
 com\test\carina\demo\regression\dataprovider\XlsDataproviderRetryTest.class
 com\test\carina\demo\WebSampleSingleDriver.class
+com\test\carina\demo\demoBlazeTest.class
 com\test\carina\demo\regression\dataprovider\DataproviderRetryTest1.class
 com\test\carina\demo\WebMultipleBrowserTest.class
+com\test\carina\demo\APITest.class
 com\test\carina\demo\IOSPreferencesTest.class
 com\test\carina\demo\PageOpeningStrategySampleTest.class
 com\test\carina\demo\IOSSafariTest.class
