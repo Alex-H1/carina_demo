@@ -19,6 +19,8 @@ public class ProductDescPage extends AbstractPage {
 
     @FindBy(xpath = "//a[text()='Cart']")
     private ExtendedWebElement cartLink;
+    @FindBy(xpath = "//a[text()='Home ']")
+    private ExtendedWebElement homeLink;
 
     public ProductDescPage(WebDriver driver) {
         super(driver);
@@ -34,5 +36,10 @@ public class ProductDescPage extends AbstractPage {
     public CartPage clickCart(){
         cartLink.click();
         return new CartPage(driver);
+    }
+
+    public HomePage clickHome(){
+        homeLink.click();
+        return new HomePage(driver);
     }
 }

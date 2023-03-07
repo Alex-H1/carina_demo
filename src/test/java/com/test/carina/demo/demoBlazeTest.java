@@ -57,8 +57,20 @@ public class demoBlazeTest implements IAbstractTest {
         homePage.typeName(name);
         homePage.typeMessage(message);
         homePage.clickSendMessage();
-        Assert.assertTrue(homePage.isPageOpened(), "About Us successfully sent");
+        Assert.assertTrue(homePage.isPageOpened(), "Contact Us successfully sent");
 
+    }
+
+    @Test
+    void testGoHome(){
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
+        String testProduct = "Samsung galaxy s6";
+        ProductDescPage productDescPage = homePage.clickProduct(testProduct);
+        Assert.assertTrue(productDescPage.isPageOpened(), "Product Page is not open");
+        productDescPage.clickHome();
+        Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
 
     }
 }

@@ -10,8 +10,6 @@ public class HomePage extends AbstractPage {
 
     @FindBy(xpath = "//*[@id='nava']")
     private ExtendedWebElement storeBanner;
-//    @FindBy(xpath = "//a[text()='Home ']")
-//    private ExtendedWebElement homeLink;
     @FindBy(xpath = "//a[text()='Contact']")
     private ExtendedWebElement contactLink;
     @FindBy(xpath = "//a[text()='Log in']")

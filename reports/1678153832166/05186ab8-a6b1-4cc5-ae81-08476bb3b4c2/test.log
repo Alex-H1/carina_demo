@@ -1,0 +1,19 @@
+[2023-03-07 01:50:48] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-07 01:50:48] [1] [INFO] TEST [carina.test - testContactUs] STARTED at [17:50:48 2023-03-06]
+[2023-03-07 01:50:48] [1] [INFO] Starting driver session...
+[2023-03-07 01:50:49] [1] [INFO] Driver session started.
+[2023-03-07 01:50:49] [1] [INFO] INFO: opening url 'https://demoblaze.com'
+[2023-03-07 01:50:50] [1] [INFO] PASS: element 'contactLink' is clicked.
+[2023-03-07 01:50:52] [1] [INFO] PASS: keys 'email' are sent to element 'contactEmail'.
+[2023-03-07 01:50:53] [1] [INFO] PASS: keys 'name' are sent to element 'contactName'.
+[2023-03-07 01:50:53] [1] [INFO] PASS: keys 'message' are sent to element 'contactMessage'.
+[2023-03-07 01:50:54] [1] [INFO] PASS: element 'sendMessageButton' is clicked.
+[2023-03-07 01:50:54] [1] [ERROR] Undefined error on capture screenshot detected: unexpected alert open: {Alert text : Thanks for the message!!}
+  (Session info: chrome=110.0.5481.178): Thanks for the message!!
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'ALEXS-LAPTOP', ip: '192.168.1.17', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [27a1ec2d3ca6a64f15e507347420ef98, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alex1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58866}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.17:4444/sess..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 27a1ec2d3ca6a64f15e507347420ef98
+[2023-03-07 01:50:55] [1] [INFO] TEST [carina.test - testContactUs] PASSED at [17:50:55 2023-03-06]
