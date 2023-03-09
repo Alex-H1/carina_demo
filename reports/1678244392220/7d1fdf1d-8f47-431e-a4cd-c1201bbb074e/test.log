@@ -1,0 +1,10 @@
+[2023-03-08 03:00:09] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-08 03:00:09] [1] [INFO] TEST [carina.test - testLogin] STARTED at [19:00:09 2023-03-07]
+[2023-03-08 03:00:09] [1] [INFO] Starting driver session...
+[2023-03-08 03:00:10] [1] [INFO] Driver session started.
+[2023-03-08 03:00:10] [1] [INFO] INFO: opening url 'https://demoblaze.com'
+[2023-03-08 03:00:11] [1] [INFO] PASS: element 'loginLink' is clicked.
+[2023-03-08 03:00:12] [1] [INFO] PASS: keys 'username' are sent to element 'loginUsernameField'.
+[2023-03-08 03:00:12] [1] [INFO] PASS: keys 'password' are sent to element 'loginPasswordField'.
+[2023-03-08 03:00:13] [1] [INFO] PASS: element 'loginButton' is clicked.
+[2023-03-08 03:00:13] [1] [INFO] TEST [carina.test - testLogin] PASSED at [19:00:13 2023-03-07]

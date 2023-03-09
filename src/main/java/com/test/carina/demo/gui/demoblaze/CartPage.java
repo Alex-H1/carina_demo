@@ -14,9 +14,7 @@ public class CartPage extends AbstractPage {
     private ExtendedWebElement totalHeader;
     @FindBy(xpath = "//*[@class='success']//td[text()='%s']")
     private ExtendedWebElement productName;
-    private ExtendedWebElement deleteButton;
-    private ExtendedWebElement total;
-    private ExtendedWebElement placeOrderButton;
+
 
     public CartPage(WebDriver driver) {
         super(driver);
@@ -27,4 +25,5 @@ public class CartPage extends AbstractPage {
     public boolean isProductInCart(String name){
      return productName.format(name).isElementPresent();
     }
+
 }

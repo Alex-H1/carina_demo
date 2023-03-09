@@ -20,8 +20,8 @@ public class demoBlazeTest implements IAbstractTest {
         String testProduct = "Samsung galaxy s6";
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
-        Assert.assertTrue(homePage.isProductInPresent(testProduct), "Product is not present");
-        ProductDescPage productDescPage = homePage.clickProduct(testProduct);
+        Assert.assertTrue(homePage.getProductCard().isProductInPresent(testProduct), "Product is not present");
+        ProductDescPage productDescPage = homePage.getProductCard().clickProduct(testProduct);
         Assert.assertTrue(productDescPage.isPageOpened(), "Product Page is not open");
         CartPage cartPage = productDescPage.clickAddToCart();
         productDescPage.clickCart();
@@ -36,12 +36,11 @@ public class demoBlazeTest implements IAbstractTest {
         String password = "password";
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
-        homePage.clickLogin();
-        homePage.typeLogin(username);
-        homePage.typePassword(password);
-        homePage.submitLogin();
-        Assert.assertTrue(homePage.isPageOpened(), "Login Unsuccessful ");
-
+        homePage.getHeaderComponent().clickLogin();
+        homePage.getLoginModal().typeLogin(username);
+        homePage.getLoginModal().typePassword(password);
+        homePage.getLoginModal().submitLogin();
+        Assert.assertTrue(homePage.getHeaderComponent().isUserBannerPresent(), "Login Unsuccessful ");
     }
 
     @Test
@@ -52,12 +51,12 @@ public class demoBlazeTest implements IAbstractTest {
         String message = "message";
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
-        homePage.clickContact();
-        homePage.typeEmail(email);
-        homePage.typeName(name);
-        homePage.typeMessage(message);
-        homePage.clickSendMessage();
-        Assert.assertTrue(homePage.isPageOpened(), "Contact Us successfully sent");
+        homePage.getHeaderComponent().clickContact();
+        homePage.getContactModal().typeEmail(email);
+        homePage.getContactModal().typeName(name);
+        homePage.getContactModal().typeMessage(message);
+        homePage.getContactModal().clickSendMessage();
+        Assert.assertTrue(homePage.isPageOpened(), "Contact Us not successfully sent");
 
     }
 
@@ -67,8 +66,8 @@ public class demoBlazeTest implements IAbstractTest {
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
         String testProduct = "Samsung galaxy s6";
-        ProductDescPage productDescPage = homePage.clickProduct(testProduct);
-        Assert.assertTrue(productDescPage.isPageOpened(), "Product Page is not open");
+        ProductDescPage productDescPage = homePage.getProductCard().clickProduct(testProduct);
+        Assert.assertTrue(productDescPage.isProductPresent(), "Product Page is not open");
         productDescPage.clickHome();
         Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
 

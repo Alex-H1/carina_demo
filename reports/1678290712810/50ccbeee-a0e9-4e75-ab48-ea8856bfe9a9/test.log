@@ -1,0 +1,11 @@
+[2023-03-08 03:52:18] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-08 03:52:18] [1] [ERROR] For some reason test method not found using reflection: testGoHome
+[2023-03-08 03:52:18] [1] [INFO] TEST [carina.test - testGoHome] STARTED at [07:52:18 2023-03-08]
+[2023-03-08 03:52:18] [1] [INFO] Starting driver session...
+[2023-03-08 03:52:19] [1] [INFO] Driver session started.
+[2023-03-08 03:52:19] [1] [INFO] INFO: opening url 'https://demoblaze.com'
+[2023-03-08 03:52:22] [1] [INFO] PASS: element 'productTitle[Samsung galaxy s6]' is clicked.
+[2023-03-08 03:52:24] [1] [INFO] PASS: element 'homeLink' is clicked.
+[2023-03-08 03:52:25] [1] [ERROR] For some reason test method not found using reflection: testGoHome
+[2023-03-08 03:52:25] [1] [INFO] TEST [carina.test - testGoHome] PASSED at [07:52:25 2023-03-08]
+[2023-03-08 03:52:25] [1] [ERROR] For some reason test method not found using reflection: testGoHome
