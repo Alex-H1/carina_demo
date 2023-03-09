@@ -1,9 +1,0 @@
-[2023-03-09 03:34:52] [1] [WARN] Reporting disabled: using no op test run registrar
-[2023-03-09 03:34:52] [1] [INFO] TEST [carina.test - testAddToCart] STARTED at [07:34:52 2023-03-09]
-[2023-03-09 03:34:52] [1] [INFO] Starting driver session...
-[2023-03-09 03:34:57] [1] [INFO] Driver session started.
-[2023-03-09 03:34:57] [1] [INFO] INFO: opening url 'https://demoblaze.com'
-[2023-03-09 03:35:01] [1] [INFO] PASS: element 'productTitle[Samsung galaxy s6]' is clicked.
-[2023-03-09 03:35:02] [1] [INFO] PASS: element 'addToCart' is clicked.
-[2023-03-09 03:35:04] [1] [INFO] PASS: element 'cartLink' is clicked.
-[2023-03-09 03:35:06] [1] [INFO] TEST [carina.test - testAddToCart] PASSED at [07:35:06 2023-03-09]
