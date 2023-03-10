@@ -9,9 +9,7 @@ import com.zebrunner.carina.core.registrar.tag.TestPriority;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
-public class demoBlazeTest implements IAbstractTest {
+public class DemoBlazeTest implements IAbstractTest {
 
     @Test
     @TestPriority(Priority.P0)
@@ -20,13 +18,13 @@ public class demoBlazeTest implements IAbstractTest {
         String testProduct = "Samsung galaxy s6";
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
-        Assert.assertTrue(homePage.isProductInPresent(testProduct), "Product is not present");
-        ProductDescPage productDescPage = homePage.clickProduct(testProduct);
+        Assert.assertTrue(homePage.getProductCard().isProductTitlePresent(testProduct), "Product is not present");
+        ProductDescPage productDescPage = homePage.getProductCard().clickProductTitle(testProduct);
         Assert.assertTrue(productDescPage.isPageOpened(), "Product Page is not open");
         CartPage cartPage = productDescPage.clickAddToCart();
         productDescPage.clickCart();
         Assert.assertTrue(cartPage.isPageOpened(), "Cart Page is not opened");
-        Assert.assertTrue(cartPage.isProductInCart(testProduct), "product is not in the cart");
+        Assert.assertTrue(cartPage.isProductInCart(testProduct), "Product is not in the cart");
 
     }
     @Test
@@ -36,10 +34,10 @@ public class demoBlazeTest implements IAbstractTest {
         String password = "password";
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
-        homePage.clickLogin();
-        homePage.typeLogin(username);
-        homePage.typePassword(password);
-        homePage.submitLogin();
+        homePage.getHeaderComponent().clickLogin();
+        homePage.getLoginModal().typeLogin(username);
+        homePage.getLoginModal().typePassword(password);
+        homePage.getLoginModal().clickSubmitLogin();
         Assert.assertTrue(homePage.isPageOpened(), "Login Unsuccessful ");
 
     }
@@ -52,11 +50,11 @@ public class demoBlazeTest implements IAbstractTest {
         String message = "message";
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
-        homePage.clickContact();
-        homePage.typeEmail(email);
-        homePage.typeName(name);
-        homePage.typeMessage(message);
-        homePage.clickSendMessage();
+        homePage.getHeaderComponent().clickContact();
+        homePage.getContactModal().typeEmail(email);
+        homePage.getContactModal().typeName(name);
+        homePage.getContactModal().typeMessage(message);
+        homePage.getContactModal().clickSendMessage();
         Assert.assertTrue(homePage.isPageOpened(), "About Us successfully sent");
 
 
