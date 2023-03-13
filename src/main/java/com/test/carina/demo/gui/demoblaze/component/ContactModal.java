@@ -1,6 +1,5 @@
 package com.test.carina.demo.gui.demoblaze.component;
 
-import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;

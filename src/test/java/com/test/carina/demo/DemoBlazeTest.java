@@ -1,9 +1,9 @@
 package com.test.carina.demo;
 
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
-import com.test.carina.demo.gui.demoblaze.CartPage;
-import com.test.carina.demo.gui.demoblaze.HomePage;
-import com.test.carina.demo.gui.demoblaze.ProductDescPage;
+import com.test.carina.demo.gui.demoblaze.pages.CartPage;
+import com.test.carina.demo.gui.demoblaze.pages.HomePage;
+import com.test.carina.demo.gui.demoblaze.pages.ProductDescPage;
 import com.zebrunner.carina.core.registrar.tag.Priority;
 import com.zebrunner.carina.core.registrar.tag.TestPriority;
 import org.testng.Assert;
@@ -22,9 +22,9 @@ public class DemoBlazeTest implements IAbstractTest {
         ProductDescPage productDescPage = homePage.getProductCard().clickProductTitle(testProduct);
         Assert.assertTrue(productDescPage.isPageOpened(), "Product Page is not open");
         CartPage cartPage = productDescPage.clickAddToCart();
-        productDescPage.clickCart();
+        productDescPage.getHeader().clickCart();
         Assert.assertTrue(cartPage.isPageOpened(), "Cart Page is not opened");
-        Assert.assertTrue(cartPage.isProductInCart(testProduct), "Product is not in the cart");
+        Assert.assertTrue(cartPage.isProductInCart(testProduct), "product is not in the cart");
 
     }
     @Test
@@ -38,7 +38,7 @@ public class DemoBlazeTest implements IAbstractTest {
         homePage.getLoginModal().typeLogin(username);
         homePage.getLoginModal().typePassword(password);
         homePage.getLoginModal().clickSubmitLogin();
-        Assert.assertTrue(homePage.isPageOpened(), "Login Unsuccessful ");
+        Assert.assertTrue(homePage.getHeaderComponent().isUserBannerPresent(), "Login Unsuccessful ");
 
     }
 
@@ -55,8 +55,19 @@ public class DemoBlazeTest implements IAbstractTest {
         homePage.getContactModal().typeName(name);
         homePage.getContactModal().typeMessage(message);
         homePage.getContactModal().clickSendMessage();
-        Assert.assertTrue(homePage.isPageOpened(), "About Us successfully sent");
+        Assert.assertTrue(homePage.isPageOpened(), "Contact Us successfully sent");
 
+    }
 
+    @Test
+    void testGoHome(){
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
+        String testProduct = "Samsung galaxy s6";
+        ProductDescPage productDescPage = homePage.getProductCard().clickProductTitle(testProduct);
+        Assert.assertTrue(productDescPage.isPageOpened(), "Product Page is not open");
+        productDescPage.getHeader().clickHome();
+        Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
     }
 }
