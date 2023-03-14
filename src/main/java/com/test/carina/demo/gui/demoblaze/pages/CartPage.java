@@ -25,8 +25,8 @@ public class CartPage extends AbstractPage {
         setUiLoadedMarker(productsHeader);
     }
 
-    public boolean isProductInCart(String name){
-     return productName.format(name).isElementPresent();
+    public boolean isProductInCart(String name) {
+        return productName.format(name).isElementPresent();
     }
 
 }

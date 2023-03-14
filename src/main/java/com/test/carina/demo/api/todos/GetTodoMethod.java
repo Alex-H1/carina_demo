@@ -1,4 +1,4 @@
-package com.test.carina.demo.api.todos;
+package api.todos;
 
 import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;
 import com.qaprosoft.carina.core.foundation.api.annotation.Endpoint;

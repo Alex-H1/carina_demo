@@ -31,7 +31,7 @@ public class Header extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public boolean isBannerPresent(){
+    public boolean isBannerPresent() {
         return storeBanner.isElementPresent();
     }
 
@@ -43,16 +43,16 @@ public class Header extends AbstractUIObject {
         contactLink.click();
     }
 
-    public boolean isUserBannerPresent(){
+    public boolean isUserBannerPresent() {
         return userBanner.isElementPresent();
     }
 
-    public CartPage clickCart(){
+    public CartPage clickCart() {
         cartLink.click();
         return new CartPage(driver);
     }
 
-    public HomePage clickHome(){
+    public HomePage clickHome() {
         homeLink.click();
         return new HomePage(driver);
     }

@@ -3,10 +3,10 @@ package com.test.carina.demo;
 import com.qaprosoft.apitools.validation.JsonCompareKeywords;
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.qaprosoft.carina.core.foundation.api.APIMethodPoller;
-import com.test.carina.demo.api.todos.DeleteTodoMethod;
-import com.test.carina.demo.api.todos.GetAllTodoMethod;
-import com.test.carina.demo.api.todos.GetTodoMethod;
-import com.test.carina.demo.api.todos.PostTodoMethod;
+import api.todos.DeleteTodoMethod;
+import api.todos.GetAllTodoMethod;
+import api.todos.GetTodoMethod;
+import api.todos.PostTodoMethod;
 import com.zebrunner.carina.core.registrar.tag.Priority;
 import com.zebrunner.carina.core.registrar.tag.TestPriority;
 import org.apache.logging.log4j.LogManager;
@@ -37,7 +37,7 @@ public class APITest implements IAbstractTest {
     }
 
     @Test
-    public void testGetTodo(){
+    public void testGetTodo() {
         GetTodoMethod api = new GetTodoMethod();
         api.callAPIExpectSuccess();
         api.validateResponse();
@@ -45,7 +45,7 @@ public class APITest implements IAbstractTest {
     }
 
     @Test
-    public void testGetTodos(){
+    public void testGetTodos() {
         GetAllTodoMethod api = new GetAllTodoMethod();
         api.callAPIExpectSuccess();
         api.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
@@ -54,7 +54,7 @@ public class APITest implements IAbstractTest {
 
     @Test
     @TestPriority(Priority.P1)
-    public void testDeleteTodo(){
+    public void testDeleteTodo() {
         DeleteTodoMethod api = new DeleteTodoMethod();
 //        api.setProperties("api/todos/todo.properties");
         api.callAPIExpectSuccess();

@@ -1,11 +1,22 @@
 package com.test.carina.demo;
 
+//import com.qaprosoft.carina.core.foundation.IAbstractTest;
+//import com.test.carina.demo.gui.demoblaze.pages.CartPage;
+//import com.test.carina.demo.gui.demoblaze.pages.HomePage;
+//import com.test.carina.demo.gui.demoblaze.pages.ProductDescPage;
+//import com.zebrunner.carina.core.registrar.tag.Priority;
+//import com.zebrunner.carina.core.registrar.tag.TestPriority;
+//import com.zebrunner.carina.utils.R;
+//import org.testng.Assert;
+//import org.testng.annotations.Test;
+
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.test.carina.demo.gui.demoblaze.pages.CartPage;
 import com.test.carina.demo.gui.demoblaze.pages.HomePage;
 import com.test.carina.demo.gui.demoblaze.pages.ProductDescPage;
 import com.zebrunner.carina.core.registrar.tag.Priority;
 import com.zebrunner.carina.core.registrar.tag.TestPriority;
+import com.zebrunner.carina.utils.R;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -27,23 +38,22 @@ public class DemoBlazeTest implements IAbstractTest {
         Assert.assertTrue(cartPage.isProductInCart(testProduct), "product is not in the cart");
 
     }
+
     @Test
-    public void testLogin(){
+    public void testLogin() {
         HomePage homePage = new HomePage(getDriver());
-        String username = "username";
-        String password = "password";
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");
         homePage.getHeaderComponent().clickLogin();
-        homePage.getLoginModal().typeLogin(username);
-        homePage.getLoginModal().typePassword(password);
+        homePage.getLoginModal().typeLogin(R.TESTDATA.get("username"));
+        homePage.getLoginModal().typePassword(R.TESTDATA.get("password"));
         homePage.getLoginModal().clickSubmitLogin();
-        Assert.assertTrue(homePage.getHeaderComponent().isUserBannerPresent(), "Login Unsuccessful ");
+        Assert.assertTrue(homePage.getHeaderComponent().isUserBannerPresent(), "Welcome, username banner is not present");
 
     }
 
     @Test
-    public void testContactUs(){
+    public void testContactUs() {
         HomePage homePage = new HomePage(getDriver());
         String email = "email";
         String name = "name";
@@ -55,12 +65,12 @@ public class DemoBlazeTest implements IAbstractTest {
         homePage.getContactModal().typeName(name);
         homePage.getContactModal().typeMessage(message);
         homePage.getContactModal().clickSendMessage();
-        Assert.assertTrue(homePage.isPageOpened(), "Contact Us successfully sent");
+        Assert.assertTrue(homePage.isPageOpened(), "Contact Us message unsuccessfully sent");
 
     }
 
     @Test
-    void testGoHome(){
+    void testGoHome() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home Page is not opened");

@@ -15,6 +15,7 @@ public class ProductCard extends AbstractUIObject {
     public ProductCard(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
+
     public ProductDescPage clickProductTitle(String name) {
         productTitle.format(name).click();
         return new ProductDescPage(driver);

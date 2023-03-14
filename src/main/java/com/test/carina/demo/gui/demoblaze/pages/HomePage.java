@@ -33,7 +33,7 @@ public class HomePage extends AbstractPage {
         setUiLoadedMarker(jumboTron);
     }
 
-    public ProductCard getProductCard(){
+    public ProductCard getProductCard() {
         return this.productCard;
     }
 

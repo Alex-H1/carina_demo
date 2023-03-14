@@ -10,10 +10,13 @@ public class ContactModal extends AbstractUIObject {
 
     @FindBy(xpath = "//*[@id='recipient-email']")
     private ExtendedWebElement contactEmail;
+
     @FindBy(xpath = "//*[@id='recipient-name']")
     private ExtendedWebElement contactName;
+
     @FindBy(xpath = "//*[@id='message-text']")
     private ExtendedWebElement contactMessage;
+
     @FindBy(xpath = "//button[text()='Send message']")
     private ExtendedWebElement sendMessageButton;
 

@@ -36,7 +36,7 @@ public class ProductDescPage extends AbstractPage {
         return header;
     }
 
-    public CartPage clickAddToCart(){
+    public CartPage clickAddToCart() {
         addToCart.click();
         return new CartPage(getDriver());
     }
@@ -45,7 +45,7 @@ public class ProductDescPage extends AbstractPage {
         return productCard;
     }
 
-    public boolean isProductPresent(){
+    public boolean isProductPresent() {
         return productName.isElementPresent();
     }
 }
