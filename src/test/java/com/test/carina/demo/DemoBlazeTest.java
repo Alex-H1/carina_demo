@@ -1,15 +1,5 @@
 package com.test.carina.demo;
 
-//import com.qaprosoft.carina.core.foundation.IAbstractTest;
-//import com.test.carina.demo.gui.demoblaze.pages.CartPage;
-//import com.test.carina.demo.gui.demoblaze.pages.HomePage;
-//import com.test.carina.demo.gui.demoblaze.pages.ProductDescPage;
-//import com.zebrunner.carina.core.registrar.tag.Priority;
-//import com.zebrunner.carina.core.registrar.tag.TestPriority;
-//import com.zebrunner.carina.utils.R;
-//import org.testng.Assert;
-//import org.testng.annotations.Test;
-
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.test.carina.demo.gui.demoblaze.pages.CartPage;
 import com.test.carina.demo.gui.demoblaze.pages.HomePage;
