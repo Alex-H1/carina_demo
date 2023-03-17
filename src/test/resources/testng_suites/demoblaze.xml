@@ -2,21 +2,18 @@
 <suite verbose="1" name="Carina Demo Tests " parallel="tests">
 
     <parameter name="suiteOwner" value="qpsdemo"/>
-    <parameter name="jenkinsJobName" value="Web-Demo"/>
-    <parameter name="jenkinsJobType" value="web"/>
-    <parameter name="jenkinsEnvironments" value="DEMO"/>
-    <parameter name="jenkinsEmail" value="demo@qaprosoft.com"/>
 
-    <parameter name="jenkinsRegressionPipeline" value="web_regression, full_regression"/>
-
-    <parameter name="jenkinsRegressionMatrix_full_regression" value="browser: chrome; browser: firefox"/>
-    <parameter name="jenkinsJobExecutionOrder" value="2"/>
-    <parameter name="jenkinsJobExecutionMode" value="continue"/>
-    <parameter name="jenkinsAutoScreenshot" value="true"/>
 
     <test name="DemoBlaze web test">
         <classes>
-            <class name="com.test.carina.demo.DemoBlazeTest" />
+            <class name="com.test.carina.demo.DemoBlazeTest">
+            <methods>
+                <include name="testAddToCart" />
+                <include name="testLogin" />
+                <include name="testContactUs" />
+                <include name="testGoHome" />
+            </methods>
+            </class>
         </classes>
     </test>
 

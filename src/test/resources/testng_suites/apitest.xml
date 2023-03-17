@@ -15,7 +15,14 @@
 
     <test name="API tests">
         <classes>
-            <class name="com.test.carina.demo.APITest" />
+            <class name="com.test.carina.demo.APITest">
+                <methods>
+                    <include name="testCreateTodo" />
+                    <include name="testGetTodo" />
+                    <include name="testGetTodos" />
+                    <include name="testDeleteTodo" />
+                </methods>
+            </class>
         </classes>
     </test>
 
